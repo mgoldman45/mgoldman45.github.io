@@ -5,15 +5,9 @@
   <body>
     <a-scene>
       <a-assets>
-      <a-cone position="-1 0.5 -3" rotation="0 45 0" color="#FF0000"></a-cone>
-      <a-dodecahedron position="0 1.25 -5" radius="1" color="#00FF00"></a-dodecahedron>
-      <a-torus position="1 0.75 -3" radius="0.5" height="1.5" color="#FFA07A"></a-torus>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="10" color="#808000"></a-plane>
-      <a-sky color="#808080"></a-sky>
-      <a-text position="1 2 -3" value="Despacito"></a-text>
-      <audio src="Despacito.mp3" autoplay
-preload>
-</audio>
+       <a-asset-item id="cell-obj" src="cell.obj"></a-asset-item> 
+         <a-asset-item id="cell-mtl" src="cell.mtl"></a-asset-item>
+           <a-entity obj-model="obj: #cell-obj; mtl: #cell-mtl" scale="0.01 0.01 0.01" rotation="-90 0 0" position="0 2 -5"></a-entity>
     </a-scene>
   </body>
 </html>
